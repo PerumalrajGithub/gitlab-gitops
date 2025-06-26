@@ -1,0 +1,19 @@
+global:
+  edition: ce
+  hosts:
+    domain: gitlab.local
+    externalIP: ""
+  ingress:
+    configureCertmanager: false
+    tls:
+      enabled: false
+    annotations: {}
+
+certmanager:
+  install: false
+
+nginx-ingress:
+  enabled: true
+  controller:
+    service:
+      type: LoadBalancer
