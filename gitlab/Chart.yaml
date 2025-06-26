@@ -1,0 +1,10 @@
+apiVersion: v2
+name: gitlab
+description: GitLab CE chart pulled via Argo CD
+type: application
+version: 1.0.0
+appVersion: "16.11.2"
+dependencies:
+  - name: gitlab
+    version: 7.11.2
+    repository: https://charts.gitlab.io
