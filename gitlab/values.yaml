@@ -17,3 +17,7 @@ nginx-ingress:
   controller:
     service:
       type: LoadBalancer
+
+upgradeCheck:
+  enabled: false
+
